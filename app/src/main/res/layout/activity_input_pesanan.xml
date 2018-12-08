@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFAF0"
+    android:padding="40dp"
+    tools:context=".InputPesanan">
+
+    <EditText
+        android:id="@+id/tanggalPesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:hint="1974-12-08"
+        android:layout_alignLeft="@+id/textView1"
+        android:inputType="date">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Tanggal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggalPesan"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Nomor meja" />
+
+    <EditText
+        android:id="@+id/nomorMeja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:inputType="number"
+        android:maxLength="20" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomorMeja"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Jam" />
+
+    <EditText
+        android:id="@+id/jamPesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btnTambahMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/jamPesan"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Next >"
+        />
+
+</RelativeLayout>
